@@ -2,6 +2,7 @@ from flask import Flask,render_template,jsonify
 name = "Jack"
 app = Flask(__name__,template_folder='template')
 
+
 JOBS=[
   {
     'id':1,
@@ -42,3 +43,4 @@ def list_jobs():
   
 if __name__ == '__main__':
   app.run(host='0.0.0.0', port=8080, debug=True)
+
